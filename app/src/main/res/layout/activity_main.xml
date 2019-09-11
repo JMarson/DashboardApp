@@ -5,13 +5,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/dashboardBaseContainer"
     tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/navBarContainer"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:padding="8dp"
+        android:paddingTop="@dimen/default_margin"
+        android:paddingStart="@dimen/default_margin"
+        android:paddingEnd="0dp"
+        android:paddingBottom="@dimen/default_margin"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
@@ -43,10 +47,12 @@
             android:id="@+id/notificationImageButton"
             android:layout_width="@dimen/minAccessibleSize"
             android:layout_height="@dimen/minAccessibleSize"
-            android:background="@android:color/transparent"
-            android:src="@drawable/baseline_notifications_none_black"
-            android:contentDescription="@string/notifications_button"
+            android:padding="@dimen/notifications_button_padding"
             android:layout_marginEnd="@dimen/small_margin"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/notifications_button"
+            android:scaleType="fitXY"
+            android:src="@drawable/baseline_notifications_none_black"
             app:layout_constraintEnd_toStartOf="@id/profileImageButton"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -54,12 +60,23 @@
             android:id="@+id/profileImageButton"
             android:layout_width="@dimen/minAccessibleSize"
             android:layout_height="@dimen/minAccessibleSize"
+            android:padding="@dimen/image_button_padding"
             android:background="@android:color/transparent"
-            android:src="@drawable/profile"
             android:contentDescription="@string/profile_button"
+            android:scaleType="fitXY"
+            android:src="@drawable/profile"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/dashboardRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/navBarContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="@dimen/default_padding" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

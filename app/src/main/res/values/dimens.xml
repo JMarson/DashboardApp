@@ -8,6 +8,11 @@
     <dimen name="default_margin">16dp</dimen>
     <dimen name="small_margin">8dp</dimen>
 
+    <!-- Padding -->
+    <dimen name="default_padding">16dp</dimen>
+    <dimen name="image_button_padding">4dp</dimen>
+    <dimen name="notifications_button_padding">8dp</dimen>
+
     <!-- Text Sizes -->
     <dimen name="heading_text">16sp</dimen>
     <dimen name="sub_heading_text">12sp</dimen>
