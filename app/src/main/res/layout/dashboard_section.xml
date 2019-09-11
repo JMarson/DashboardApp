@@ -5,13 +5,14 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="@dimen/default_padding"
     android:id="@+id/dashboardSectionContainer">
 
     <TextView
         android:id="@+id/sectionTitleTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_margin"
+        android:layout_marginEnd="@dimen/default_margin"
         style="@style/AppTheme.TextView.SectionHeading"
         tools:text="SECTION HEADER" />
 
@@ -19,14 +20,16 @@
         android:id="@+id/sectionCardView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="25dp"
+        app:cardCornerRadius="12dp"
+        android:layout_margin="@dimen/default_margin"
         android:background="@color/white"
-        app:cardElevation="10dp">
+        app:cardElevation="5dp">
 
         <LinearLayout
             android:id="@+id/sectionRows"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:padding="@dimen/default_padding"
             android:orientation="vertical" />
 
     </androidx.cardview.widget.CardView>

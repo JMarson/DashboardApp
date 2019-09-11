@@ -1,8 +1,6 @@
 package com.jmarson.dashboardapp.helpers
 
-import com.jmarson.dashboardapp.models.Course
-import com.jmarson.dashboardapp.models.DashboardSection
-import com.jmarson.dashboardapp.models.User
+import com.jmarson.dashboardapp.models.*
 import java.time.Instant
 
 class DataManager {
@@ -28,9 +26,14 @@ class DataManager {
             ))
 
         sections = listOf(
-            DashboardSection(null, Constants.SectionTypes.CLASSES, 3),
-            DashboardSection("Available car parks", Constants.SectionTypes.CAR_PARK, 3),
-            DashboardSection("Intercampus Shuttle Bus", Constants.SectionTypes.BUS_ROUTES, 3)
+            DashboardSection(null, Constants.SectionTypes.CLASSES, user.coursesList),
+            DashboardSection("Available car parks", Constants.SectionTypes.CAR_PARK, listOf(
+                CarPark("Clayton Car Park", 635))
+            ),
+            DashboardSection("Intercampus Shuttle Bus", Constants.SectionTypes.BUS_ROUTES, listOf(
+                BusRoute("Clayton","Chadstone","4"),
+                BusRoute("Clayton","Chadstone", "16"))
+            )
         )
     }
 
