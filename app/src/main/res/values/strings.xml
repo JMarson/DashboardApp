@@ -3,4 +3,6 @@
     <string name="profile_button">Profile</string>
     <string name="notifications_button">Notifications</string>
     <string name="user_greeting">Hey, %s</string>
+    <string name="date_text">%1$s, %2$s</string>
+    <string name="week_text">Week %s</string>
 </resources>
