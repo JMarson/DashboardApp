@@ -17,5 +17,13 @@
     <dimen name="heading_text">16sp</dimen>
     <dimen name="sub_heading_text">12sp</dimen>
     <dimen name="body_text">13sp</dimen>
+    <dimen name="counter_text">12sp</dimen>
+
+    <!-- Separator Sizes -->
+    <dimen name="separator_width">2dp</dimen>
+
+    <!-- Carpark Dot Sizes -->
+    <dimen name="carpark_dot_size">10dp</dimen>
+    <dimen name="carpark_dot_spacing">2dp</dimen>
 
 </resources>

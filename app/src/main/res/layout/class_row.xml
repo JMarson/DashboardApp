@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/classRowContainer">
+
+    <TextView
+        android:id="@+id/startTimeTextView"
+        style="@style/AppTheme.TextView.Body"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/default_padding"
+        android:paddingEnd="@dimen/default_padding"
+        tools:text="TIME AM"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/endTimeTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/separatorView" />
+
+    <TextView
+        android:id="@+id/endTimeTextView"
+        style="@style/AppTheme.TextView.Body"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/default_padding"
+        android:paddingEnd="@dimen/default_padding"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/separatorView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/startTimeTextView"
+        tools:text="TIME AM" />
+
+    <View
+        android:id="@+id/separatorView"
+        android:layout_width="@dimen/separator_width"
+        android:layout_height="0dp"
+        android:background="@color/blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/courseTitleTextView"
+        style="@style/AppTheme.TextView.Body.Bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/default_padding"
+        android:paddingEnd="@dimen/default_padding"
+        android:layout_marginBottom="@dimen/small_margin"
+        tools:text="COURSE CODE CLASS TYPE"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/courseTeacherTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/separatorView" />
+
+    <TextView
+        android:id="@+id/courseTeacherTextView"
+        style="@style/AppTheme.TextView.Body"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/default_padding"
+        android:paddingEnd="@dimen/default_padding"
+        tools:text="NAME OF TEACHER"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/separatorView" />
+
+    <TextView
+        android:id="@+id/courseLocationTextView"
+        style="@style/AppTheme.TextView.Body"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/default_padding"
+        android:paddingEnd="@dimen/default_padding"
+        android:layout_marginTop="@dimen/small_margin"
+        tools:text="COURSE CODE CLASS TYPE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/courseTeacherTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/separatorView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
