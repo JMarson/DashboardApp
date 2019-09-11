@@ -7,4 +7,8 @@
     <string name="week_text">Week %s</string>
     <string name="carpark_dot_text">Carpark</string>
     <string name="bus_route_text">going to</string>
+    <string name="carpark_section_text">Available car parks</string>
+    <string name="shuttlebus_section_text">Intercampus Shuttle Bus</string>
+    <string name="today_text">TODAY</string>
+    <string name="minutes_remaining_text">%1$s mins</string>
 </resources>
