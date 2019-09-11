@@ -25,7 +25,7 @@
         android:layout_marginEnd="@dimen/default_margin"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/counterTextView">
+        app:layout_constraintEnd_toStartOf="@id/spacesTextView">
 
         <ImageView
             android:layout_width="wrap_content"
@@ -93,12 +93,11 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/counterTextView"
+        android:id="@+id/spacesTextView"
         style="@style/AppTheme.TextView.Counter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:text="645"
-
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />

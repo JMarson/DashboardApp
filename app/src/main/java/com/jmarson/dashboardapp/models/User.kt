@@ -6,7 +6,7 @@ import com.jmarson.dashboardapp.R
 class User (
     private val firstName: String,
     private val surname: String,
-    private val coursesList: List<Course>) {
+    val coursesList: List<Course>) {
 
     /**
      * Returns constructed greeting string with user's name
