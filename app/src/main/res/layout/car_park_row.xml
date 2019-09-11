@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/carParkRowContainer">
+
+    <TextView
+        android:id="@+id/carparkNameTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/AppTheme.TextView.Body"
+        tools:text="CARPARK live feed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/carparkDotsContainer"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/carparkDotsContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginEnd="@dimen/default_margin"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/counterTextView">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/circle_view"
+            android:tint="@color/blue"
+            android:layout_marginStart="@dimen/carpark_dot_spacing"
+            android:layout_marginEnd="@dimen/carpark_dot_spacing"
+            android:contentDescription="@string/carpark_dot_text" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/circle_view"
+            android:tint="@color/lavender"
+            android:layout_marginStart="@dimen/carpark_dot_spacing"
+            android:layout_marginEnd="@dimen/carpark_dot_spacing"
+            android:contentDescription="@string/carpark_dot_text" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/circle_view"
+            android:tint="@color/pink"
+            android:layout_marginStart="@dimen/carpark_dot_spacing"
+            android:layout_marginEnd="@dimen/carpark_dot_spacing"
+            android:contentDescription="@string/carpark_dot_text" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/circle_view"
+            android:tint="@color/red"
+            android:layout_marginStart="@dimen/carpark_dot_spacing"
+            android:layout_marginEnd="@dimen/carpark_dot_spacing"
+            android:contentDescription="@string/carpark_dot_text" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/circle_view"
+            android:tint="@color/yellow"
+            android:layout_marginStart="@dimen/carpark_dot_spacing"
+            android:layout_marginEnd="@dimen/carpark_dot_spacing"
+            android:contentDescription="@string/carpark_dot_text" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/circle_view"
+            android:tint="@color/green"
+            android:layout_marginStart="@dimen/carpark_dot_spacing"
+            android:layout_marginEnd="@dimen/carpark_dot_spacing"
+            android:contentDescription="@string/carpark_dot_text" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/circle_view"
+            android:tint="@color/orange"
+            android:layout_marginStart="@dimen/carpark_dot_spacing"
+            android:layout_marginEnd="@dimen/carpark_dot_spacing"
+            android:contentDescription="@string/carpark_dot_text" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/counterTextView"
+        style="@style/AppTheme.TextView.Counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="645"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

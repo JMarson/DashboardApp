@@ -35,4 +35,10 @@
         <item name="android:textStyle">bold</item>
     </style>
 
+    <style name="AppTheme.TextView.Counter" parent="AppTheme.TextView">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">@dimen/counter_text</item>
+    </style>
+
 </resources>
