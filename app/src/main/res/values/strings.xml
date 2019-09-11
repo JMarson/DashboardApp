@@ -2,4 +2,5 @@
     <string name="app_name">DashboardApp</string>
     <string name="profile_button">Profile</string>
     <string name="notifications_button">Notifications</string>
+    <string name="user_greeting">Hey, %s</string>
 </resources>
