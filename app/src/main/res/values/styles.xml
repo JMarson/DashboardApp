@@ -1,11 +1,38 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.TextView">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="AppTheme.TextView.Heading" parent="AppTheme.TextView">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/heading_text</item>
+    </style>
+
+    <style name="AppTheme.TextView.Body" parent="AppTheme.TextView">
+        <item name="android:textSize">@dimen/body_text</item>
+    </style>
+
+    <style name="AppTheme.TextView.SubHeading" parent="AppTheme.TextView">
+        <item name="android:textSize">@dimen/sub_heading_text</item>
+        <item name="android:color">@color/gray</item>
+    </style>
+
+    <style name="AppTheme.TextView.SectionHeading" parent="AppTheme.TextView">
+        <item name="android:textSize">@dimen/body_text</item>
+        <item name="android:color">@color/gray</item>
+    </style>
+
+    <style name="AppTheme.TextView.Body.Bold" parent="AppTheme.TextView.Body">
+        <item name="android:textStyle">bold</item>
     </style>
 
 </resources>
